@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+	<title>afrianska-landingpage</title>
+	<style type="text/css">
+		body {
+			font-family: Gilroy;
+		}
+		* {
+			box-sizing: border-box;
+	}
+	img	{
+			width: 100%;
+		}
+		a {
+			text-decoration: none;
+			color:inherit;
+		}
+		header {
+			background: linear-gradient(0deg, #d9edff 8.84%, rgba(152, 195, 232, 0) 31.12%);
+		}
+		.wrap {
+			width: 1300px;
+			margin: auto;
+		}
+		.nav .A {
+			width: 48px;
+		}
+		.nav .menu {
+			width: 32px;
+		}
+		.nav {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 40px;
+		}
+		.main {
+			display: flex;
+			justify-content: space-around;
+			margin-top: 61px;
+			padding-bottom: 55px;
+		}
+		.new-automation {
+			width: 510px;
+			position: relative;
+			left: 150px;
+		}
+		.new-automation h1 {
+			font-size: 64px;
+			line-height: 74px;
+			color: #1F3F68;
+		}
+		.new-automation p {
+			font-size: 16px;
+			line-height: 26px;
+			color: #1F3F68;
+			opacity: 0.6;
+			width: 425px;
+		}
+		.button {
+			width: 220px;
+			background-color: #5A98D0;
+			box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+			border-radius: 10px;
+			text-align: center;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			color: white;
+			margin-top: 80px;
+		}
+		.image {
+			width: 687px;
+		}
+		main {
+			width: 940px;
+			margin: auto;
+		}
+		.text {
+			width: 460px;
+		}
+		.text h2 {
+			color: #316099;
+			line-height: 46px;
+			font-size: 36px;
+			width: 358px;
+			margin-bottom: 158px;
+		}
+		.your-business {
+			width: 380px;
+			text-align: center;
+			box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+			border-radius: 10px;
+			margin-bottom: 100px;
+		}
+		.your-business .img img {
+			width: 180px;
+		}
+		.your-business .img {
+			padding-top: 48px;
+			padding-bottom: 56px;
+		}
+		.your-business h3 {
+			color: #1F3F68;
+			line-height: 30px;
+			font-size: 20px;
+			text-align: left;
+			width: 257px;
+			margin: auto;
+		}
+		.your-business p {
+			width: 257px;
+			font-size: 16px;
+			line-height: 26px;
+			opacity: 0,6;
+			color: #1F3F68;
+			text-align: left;
+			margin: auto;
+			margin-top: 16px;
+			margin-bottom: 32px;
+		}
+		.learn-more {
+			width: 260px;
+			margin: auto;
+			padding-bottom: 48px;
+		}
+		.learn-more .text {
+			color: #5A98D0;
+			line-height: 30px;
+			font-size: 14px;
+			width: 79px;
+			font-weight: 600;
+		}
+		.learn-more .img-1 {
+			width: 16px;
+			height: 16px;
+			padding: 0;
+			padding-top: 7px;
+		}
+		.learn-more .content {
+			width: 127px;
+			justify-content: space-between;
+			display: flex;
+		}
+		.what-do {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 180px;
+			margin-bottom: 80px;
+		}
+		.your-business .img-big img {
+			width: 224px;
+			height: 197px;
+			position: relative;
+			top: -20px;
+		}
+		.our-finished {
+			display: flex;
+			justify-content: space-between;
+			width: 860px;
+		}
+		.our-finished .title h1 {
+			font-size: 36px;
+			line-height: 46px;
+			width: 227px;
+			color: #1F3F68;
+			padding: 0;
+			margin:0;
+		}
+		.our-finished .subtitle p {
+			font-size: 16px ;
+			line-height: 26px ;
+			width: 540px;
+			color: #1F3F68;
+			padding: 0;
+			margin:0;
+		}
+		.smart-home {
+			background-image: url(MaskGroup.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 424px;
+			border-radius: 10px;
+			position: relative;
+			margin-top: 108px;
+		}
+		.smart-text {
+			width: 341px;
+			position: absolute;
+			top: 48px;
+			right: 66px;
+		}
+		.smart-text h2 {
+			font-size: 28px;
+			line-height: 46px;
+			color: white;
+			text-align: right;
+		}
+		.smart-text p {
+			text-align: right;
+			font-size: 16px;
+			line-height: 46px;
+			color: white;
+		}
+		.app .app-1 , .app-2 {
+			width: 422px;
+			height: 417px;
+		}
+		.app-1 {
+			background-image: url(MaskGroup1.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.app-2 {
+			background-image: url(MaskGroup3.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.app-1 .app-text  h2, .app-2 .app-text  h2 {
+			font-size: 28px;
+			line-height: 20px;
+			color: white;
+		}
+		.app {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 89px;
+		}
+		.app-1 .app-text  p, .app-2 .app-text  p {
+			font-size: 16px;
+			line-height: 46px;
+			color: white;
+			opacity: 0.8;
+			margin: 0;
+		}
+		.app-1, .app-2 {
+			position: relative;
+		}
+		.app-text {
+			position: absolute;
+			left: 32px;
+			top: 24px;
+		}
+		footer {
+			background-color: #5A98D0;
+			border-radius: 200px 0px 0px 0px;
+			margin-top: 250px;
+		}
+		.our-beloved {
+			width: 860px;
+			margin: auto;
+			display: flex;
+			justify-content: space-between;
+			padding-top: 96px;
+			padding-bottom: 123px;
+		}
+		.our-beloved .text {
+			font-size: 36px;
+			line-height: 46px;
+			width: 223px;
+			color: white;
+		}
+		.lorem {
+			font-size: 16px;
+			line-height: 26px;
+			opacity: 0.6;
+			color: white;
+			width: 540px;
+		}
+		.logo-client {
+			width: 940px;
+			margin: auto;
+			padding-bottom: 120px;
+		}
+		.logo {
+			width: 235px;
+			text-align: center;
+			padding-top: 41px;
+			padding-bottom: 41px;
+			color: white;
+			font-size: 20px;
+			font-weight: 600;
+			border-right: 1px solid rgba(255, 255, 255, 0.3);
+			border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+		}
+		.logo-1 {
+			width: 235px;
+			text-align: center;
+			padding-top: 41px;
+			padding-bottom: 41px;
+			color: white;
+			font-size: 20px;
+			font-weight: 600;
+			border-right: 1px solid rgba(255, 255, 255, 0.3);
+		}
+		.logo-group-1, .logo-group-2 {
+			display: flex;
+		}
+		.logo-4 {
+			width: 235px;
+			text-align: center;
+			padding-top: 41px;
+			padding-bottom: 41px;
+			color: white;
+			font-size: 20px;
+			font-weight: 600;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+		}
+		.logo-8 {
+			width: 235px;
+			text-align: center;
+			padding-top: 41px;
+			padding-bottom: 41px;
+			color: white;
+			font-size: 20px;
+			font-weight: 600;
+			background-color: rgba(31, 63, 104, 0.2);
+		}
+		.intersted {
+			width: 95%;
+			background-color: #316099;
+			border-radius: 0px 200px 0px 0px;
+		}
+		.intersted-text {
+			width: 860px;
+			margin: auto;
+			display: flex;
+			justify-content: space-between;
+			padding-top: 90px;
+			padding-bottom: 96px;
+		}
+		.intersted-text .text h1 {
+			font-size: 36px;
+			line-height: 46px;
+			color: white;
+			padding: 0;
+			margin:0;
+		}
+		.intersted-text .text p {
+			font-size: 16px ;
+			line-height: 26px ;
+			color: white;
+			padding: 0;
+			margin:0;
+			margin-top: 32px;
+		}
+		.line {
+			width: 75%;
+			opacity: 0.4;
+		}
+		.navigation {
+			width: 860px;
+			margin: auto;
+			display: flex;	
+			justify-content: space-between;
+			margin-top: 90px;
+		}
+		.afrianska {
+			width: 189px;
+			display: flex;
+			justify-content: space-between;
+		}
+		.afrianska h1 {
+			padding-top: 5px;
+			margin: 0;
+			color: white;
+			font-size: 28px;
+		}
+		nav {
+			margin-top: 33px;
+		}
+		nav ul li {
+			width: 264px;
+			font-size: 16px;
+			line-height: 26px;
+			color: white;
+			padding-bottom: 24px;
+			list-style-type: none;
+			display: flex;
+		}
+		nav ul li div {
+			padding-left: 20px;
+		}
+		nav ul {
+			padding: 0;
+			margin: 0;
+		}
+		.end {
+			font-size: 16px;
+			line-height: 26px;
+			color: white;
+			opacity: 0.4;
+			margin-top: 35px;
+			padding-bottom: 64px;
+		}
+		.block-2 h2 {
+			font-size: 20px;
+			line-height: 30px;
+			color: white;
+		}
+		.block-2 ul li {
+			list-style-type: none;
+			color: white;
+			font-size: 16px;
+			line-height: 36px;
+		}
+		.block-2 ul {
+			margin: 0;
+			padding: 0;
+		}
+
+
+	</style>
+</head>
+<body>
+<header>
+		<section class="wrap">
+			<div class="content">
+				<div class="nav">
+					<div class="A">
+						<img src="logo.png">
+					</div>
+					<div class="menu">
+						<img src="ic_menu_48px.png">
+					</div>
+				</div>
+				<div class="main">
+					<div class="new-automation">
+						<h1>
+							New Automation Tool for Your Home
+						</h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus tristique vulputate ultrices ut mauris tellus at. Posuere sollicitudin odio tellus elit.
+						</p>
+						<a href="#">
+							<div class="button">
+							See Our Project
+						</div>
+						</a>
+					</div>
+					<div class="image">
+						<img src="illustration.png">
+					</div>
+				</div>
+			</div>
+		</section>
+</header>
+<main>
+	<section class="what-do">
+		<div class="text">
+			<h2>
+				What we do to help our client grow in digital era,
+			</h2>
+			<div class="your-business">
+				<div class="img">
+					<img src="1.png">
+				</div>
+				<h3>
+					Make Your business To Be Better Famous In Internet
+				</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+				</p>
+				<div class="learn-more">
+					<a href="#">
+						<div class="content">
+					<div class="text">
+						Learn more
+					</div>
+					<div class="img-1">
+						<img src="Vector.svg">
+					</div>
+					</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="your-business">
+				<div class="img-big">
+					<img src="3.png">
+				</div>
+				<h3>
+					Make Your business To Be Better Famous In Internet
+				</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+				</p>
+				<div class="learn-more">
+					<a href="#">
+						<div class="content">
+					<div class="text">
+						Learn more
+					</div>
+					<div class="img-1">
+						<img src="Vector.svg">
+					</div>
+					</div>
+					</a>
+				</div>
+			</div>
+			<div class="your-business">
+				<div class="img">
+					<img src="220.png">
+				</div>
+				<h3>
+					Make Your business To Be Better Famous In Internet
+				</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+				</p>
+				<div class="learn-more">
+					<a href="#">
+						<div class="content">
+					<div class="text">
+						Learn more
+					</div>
+					<div class="img-1">
+						<img src="Vector.svg">
+					</div>
+					</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="our-finished">
+		<div class="title">
+			<h1>
+				Our Finished Project
+			</h1>
+		</div>
+		<div class="subtitle">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+			</p>
+		</div>
+	</section>
+	<section class="smart-home">
+		<div class="smart-text">
+			<h2>
+				Smart Home Installation
+			</h2>
+			<p>
+				In Muarakana Housing Estate
+			</p>
+		</div>
+	</section>
+	<section class="app">
+		<div class="app-1">
+			<div class="app-text">
+				<h2>
+					Car-Rapetition App
+				</h2>
+				<p>
+					Marketplace
+				</p>
+			</div>
+		</div>
+		<div class="app-2">
+			<div class="app-text">
+				<h2>
+					Car-Rapetition App
+				</h2>
+				<p>
+					Board
+				</p>
+			</div>
+		</div>
+	</section>
+</main>
+<footer class="beloved">
+	<div class="our-beloved">
+		<div class="text">	
+				Our Beloved Client
+		</div>
+		<div class="lorem">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+		</div>
+	</div>
+	<div class="logo-client">
+		<div class="logo-group-1">
+			<div class="logo">LOGO CLIENT 1</div>
+			<div class="logo">LOGO CLIENT 2</div>
+			<div class="logo">LOGO CLIENT 3</div>
+			<div class="logo-4">LOGO CLIENT 4</div>
+		</div>
+		<div class="logo-group-2">
+			<div class="logo-1">LOGO CLIENT 5</div>
+			<div class="logo-1">LOGO CLIENT 6</div>
+			<div class="logo-1">LOGO CLIENT 7</div>
+			<div class="logo-8">More Client</div>
+		</div>
+	</div>
+	<div class="intersted">
+		<div class="intersted-text">
+			<div class="text">
+				<h1>
+					Intersted to woek with our team?
+				</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+				</p>
+			</div>
+			<div class="lets-talk">
+				<a href="#">
+							<div class="button">
+							Let’s Talk
+						</div>
+						</a>
+			</div>
+		</div>
+		<div class="line"><hr></div>
+		<div class="navigation">
+			<div class="block-1">
+			<div class="afrianska">
+				<div class="A">
+					<img src="logo1.png">
+				</div>
+				<h1>
+					Afrianska
+				</h1>
+			</div>
+			<nav>
+				<ul>
+					<li>A. 
+						<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div></li>
+					<li>T. 
+						<div>
+						+62-812-7313-4321
+						</div>
+					</li>
+					<li>E 
+						<div>
+						<a href="#">
+							hello.afrian@gmail.com
+						</a>
+						</div>
+					</li>
+				</ul>
+			</nav>
+			<div class="end">
+				2019 © Afrianska. All rights reserved.
+			</div>
+			</div>
+			<div class="block-2">
+				<h2>
+					About US
+				</h2>
+				<ul>
+					<li>
+						<a href="#">
+							About
+						</a>
+					</li>
+					<li><a href="#">
+						What We Do
+					</a></li>
+					<li><a href="#">
+						Project
+					</a></li>
+					<li><a href="#">
+						How It Work With Us
+					</a></li>
+				</ul>
+			</div>
+			<div class="block-2">
+				<h2>
+					Follow US
+				</h2>
+				<ul>
+					<li><a href="#">
+						Instagram
+					</a></li>
+					<li><a href="#">
+						Facebook
+					</a></li>
+					<li><a href="#">
+						LinkedIn
+					</a></li>
+					<li><a href="#">
+						Youtube
+					</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+</body>
+</html>
